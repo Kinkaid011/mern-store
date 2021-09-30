@@ -14,7 +14,7 @@ router.get(
   '/',
   asyncHandler(async (req, res) => {
     const products = await Product.find({});
-    //this current doesn't have error handling, we'll use an express package that we cover it for all routes
+
     res.json(products);
   })
 );
